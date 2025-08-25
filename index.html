@@ -180,17 +180,18 @@
 <!-- Method section -->
 <section class="section hero">
   <div class="container is-max-desktop">
-    <!-- Method image -->
-    <div class="hero-body">
-      <img src="static/method/method.png" alt="Method Image" style="width: 100%; height: auto; max-height: 100%;">
-      <h2 class="subtitle has-text-centered">
-        Overview of FastAvatar's architecture and key components for unified 3D avatar reconstruction.
-      </h2>
-    </div>
-    
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
+        
+        <!-- Method image -->
+        <div class="hero-body">
+          <img src="static/method/framework.png" alt="Method Image" style="width: 100%; height: auto; max-height: 100%;">
+          <!-- <h2 class="subtitle has-text-centered">
+            Overview of FastAvatar's architecture and key components for unified 3D avatar reconstruction.
+          </h2> -->
+        </div>
+        
         <div class="content has-text-justified">
           <p>
             FastAvatar is a feed-forward framework designed for high-quality, animatable <strong>3D Gaussian Splatting (3DGS) avatars</strong> reconstruction from <strong>variable-length input observations</strong> such as single images or multi-view video sequences. Unlike optimization-based methods, FastAvatar leverages a <strong>Large Gaussian Reconstruction Transformer (LGRT)</strong> architecture to efficiently achieve robust reconstruction fidelity while supporting dynamic facial expressions and poses.
@@ -212,12 +213,9 @@
               <strong>Canonical Fusion:</strong> Multi-view Gaussian splatting representations are fused into a canonical 3DGS model, guided by loss functions like <strong>Landmark Tracking Loss</strong> and <strong>Sliced Fusion Loss</strong> to ensure proper alignment and eliminate artifacts.
             </li>
             <li>
-              <strong>Efficient Rendering:</strong> The reconstructed 3DGS avatar is driven by expression codes (e.g., derived from FLAME) for animatable facial movement control. Through activation caching, animation speeds of ~8 FPS can be achieved on an RTX 3090 GPU.
+              <strong>Efficient Rendering:</strong> The reconstructed 3DGS avatar is driven by expression codes (e.g., derived from FLAME) for animatable facial movement control. Through activation caching, animation speeds of ~55 FPS (input 16 frames) can be achieved on an RTX 4090 GPU.
             </li>
           </ul>
-          <p>
-            FastAvatar’s streamlined architecture, combined with its attention mechanisms and loss design, addresses challenges in token registration, sparse inputs, and pose dynamics. The result is a scalable and efficient framework for animatable avatar reconstruction across diverse input modalities.
-          </p>
         </div>
       </div>
     </div>

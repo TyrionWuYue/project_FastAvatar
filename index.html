@@ -98,7 +98,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -106,7 +106,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -120,15 +120,16 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
-              </span>
+                  </a>
+                </span> -->
+
             </div>
           </div>
         </div>
@@ -175,6 +176,55 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Method section -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <!-- Method image -->
+    <div class="hero-body">
+      <img src="static/method/method.png" alt="Method Image" style="width: 100%; height: auto; max-height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        Overview of FastAvatar's architecture and key components for unified 3D avatar reconstruction.
+      </h2>
+    </div>
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            FastAvatar is a feed-forward framework designed for high-quality, animatable <strong>3D Gaussian Splatting (3DGS) avatars</strong> reconstruction from <strong>variable-length input observations</strong> such as single images or multi-view video sequences. Unlike optimization-based methods, FastAvatar leverages a <strong>Large Gaussian Reconstruction Transformer (LGRT)</strong> architecture to efficiently achieve robust reconstruction fidelity while supporting dynamic facial expressions and poses.
+          </p>
+          <p>
+            The pipeline can be summarized as follows:
+          </p>
+          <ul>
+            <li>
+              <strong>Facial Tokenization:</strong> Each input frame is processed into latent tokens via <strong>DINOv2</strong> for feature extraction. Tokens are encoded with expression coefficients, pose, and camera information to distinguish facial features across frames. Patchified tokens ensure compatibility with subsequent transformer-based processing.
+            </li>
+            <li>
+              <strong>Attention-Based Aggregation:</strong> Tokens are fused using both <strong>frame attention</strong> (intra-frame processing via positional prompts) and <strong>global attention</strong> (cross-frame alignment). This enables accurate 3D spatial registration and consistency across variable-length inputs.
+            </li>
+            <li>
+              <strong>Gaussian Splatting Prediction:</strong> Aggregated tokens are processed through an MLP-based <strong>GS Head</strong> to predict Gaussian splatting attributes such as scale, position, rotation, color, and opacity. These attributes are rasterized into a high-quality 3D Gaussian point cloud representation for animatable avatars.
+            </li>
+            <li>
+              <strong>Canonical Fusion:</strong> Multi-view Gaussian splatting representations are fused into a canonical 3DGS model, guided by loss functions like <strong>Landmark Tracking Loss</strong> and <strong>Sliced Fusion Loss</strong> to ensure proper alignment and eliminate artifacts.
+            </li>
+            <li>
+              <strong>Efficient Rendering:</strong> The reconstructed 3DGS avatar is driven by expression codes (e.g., derived from FLAME) for animatable facial movement control. Through activation caching, animation speeds of ~8 FPS can be achieved on an RTX 3090 GPU.
+            </li>
+          </ul>
+          <p>
+            FastAvatar’s streamlined architecture, combined with its attention mechanisms and loss design, addresses challenges in token registration, sparse inputs, and pose dynamics. The result is a scalable and efficient framework for animatable avatar reconstruction across diverse input modalities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End method section -->
 
 <!-- Video carousel -->
 <section class="hero is-small">

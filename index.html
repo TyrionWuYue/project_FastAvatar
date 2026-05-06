@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="FastAvatar is an ICLR 2026 feedforward framework for unified and fast 3D avatar reconstruction with Large Gaussian Reconstruction Transformers.">
+  <meta property="og:title" content="FastAvatar: Towards Unified and Fast 3D Avatar Reconstruction"/>
+  <meta property="og:description" content="A unified feedforward framework that reconstructs high-quality 3D Gaussian Splatting avatars from single images, monocular video, or multi-view observations within seconds."/>
+  <meta property="og:url" content="https://tyrionwuyue.github.io/project_FastAvatar/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/teaser/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="FastAvatar: Towards Unified and Fast 3D Avatar Reconstruction">
+  <meta name="twitter:description" content="ICLR 2026 feedforward 3D avatar reconstruction with Large Gaussian Reconstruction Transformers.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/teaser/teaser.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="FastAvatar, 3D avatar reconstruction, 3D Gaussian Splatting, 3DGS, Large Gaussian Reconstruction Transformer, LGRT, ICLR 2026">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>FastAvatar: Towards Unified Fast High-Fidelity 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers</title>
+  <title>FastAvatar: Towards Unified and Fast 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,26 +52,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">FastAvatar: Towards Unified Fast High-Fidelity 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers</h1>
+            <h1 class="title is-1 publication-title">FastAvatar: Towards Unified and Fast 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="publication-venue">ICLR 2026</span>
+            </div>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://tyrionwuyue.github.io/" target="_blank">Yue Wu</a><sup>1,2</sup>,</span>
-              
-              <span class="author-block">
-                    <a href="https://github.com/EavianWoo" target="_blank">Yufan Wu</a><sup>3,4</sup>,</span>
 
               <span class="author-block">
-                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=__nVVTcAAAAJ&view_op=list_works&gmla=AH8HC4wvSb3GOijD2yVOgTTZZpBYfwZv7gccn3wsBOGSLX6yGYuTg2bXKKld9Lc53lj0jO7WwL-7e-gCE33w5sPjKyvRjTmGUrS3fAWAv5A" target="_blank">Wen Li</a><sup>3,4</sup>,</span>
-              
+                    <a href="https://github.com/neuralchen" target="_blank">Xuanhong Chen</a><sup>3*</sup>,</span>
+
+              <span class="author-block">
+                    <a href="https://github.com/EavianWoo" target="_blank">Yufan Wu</a><sup>3</sup>,</span>
+
+              <span class="author-block">
+                    <a href="https://github.com/lililuya" target="_blank">Wen Li</a><sup>4</sup>,</span>
+
               <span class="author-block">
                     <a href="https://orcid.org/0000-0003-1205-3524" target="_blank">Yuxi Lu</a><sup>1</sup>,</span>
-              
+
               <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=4N5hE8YAAAAJ&hl=en" target="_blank">Kairui Feng</a><sup>1,2*</sup>,</span>
-              
-              <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=UuCqlfEAAAAJ&hl=en" target="_blank">Xuanhong Chen</a><sup>3*</sup>,</span>
+                    <a href="https://kelvinfkr.github.io/" target="_blank">Kairui Feng</a><sup>1,2</sup></span>
             </div>
 
                   <div class="is-size-5 publication-authors">
@@ -79,9 +82,9 @@
                         <sup>1</sup>Tongji University, 
                         <sup>2</sup>Shanghai Innovation Institute, 
                         <sup>3</sup>Shanghai Jiao Tong University, 
-                        <sup>4</sup>Akool Research
+                        <sup>4</sup>AKool
                     </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding authors</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -119,6 +122,28 @@
                   </a>
                 </span>
 
+                <!-- OpenReview link -->
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=P7zBSCs4Xt" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                  <span>OpenReview</span>
+                </a>
+              </span>
+
+                <!-- HuggingFace model link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/TyrionWuY/FastAvatar" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Models</span>
+                </a>
+              </span>
+
                 <!-- ArXiv abstract Link -->
                 <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
@@ -152,6 +177,34 @@
 </section>
 <!-- End teaser image -->
 
+<!-- News and highlights -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-variable is-6">
+      <div class="column">
+        <h2 class="title is-3">News</h2>
+        <div class="content">
+          <ul>
+            <li><strong>[2026/03/01]</strong> Released new model weights and training code.</li>
+            <li><strong>[2026/01/26]</strong> Accepted to ICLR 2026.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">Core Highlights</h2>
+        <div class="content">
+          <ul>
+            <li><strong>Unified model</strong> with flexible multi-frame aggregation for ultra-high-fidelity avatars.</li>
+            <li><strong>Fast feedforward reconstruction</strong> that delivers high-quality 3DGS models within seconds.</li>
+            <li><strong>Incremental reconstruction</strong> from diverse inputs, including single-shot, monocular, and multi-view observations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End news and highlights -->
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -162,13 +215,14 @@
           <p>
             Despite significant progress in 3D avatar reconstruction, it still faces challenges such as high time complexity, sensitivity to data quality, and low data utilization.
             We propose <strong>FastAvatar</strong>, a feedforward 3D avatar framework capable of flexibly leveraging diverse daily recordings (e.g., a single image, multi-view observations, or monocular video) to reconstruct a high-quality 3D Gaussian Splatting (3DGS) model within seconds, using only a single unified model.
-            FastAvatar’s core is a Large Gaussian Reconstruction Transformer featuring three key designs:
-            First, a variant VGGT-style transformer architecture aggregating multi-frame cues while injecting initial 3D prompt to predict an aggregatable canonical 3DGS representation;
-            Second, multi-granular guidance encoding (camera pose, FLAME expression, head pose) mitigating animation-induced misalignment for variable-length inputs;
+            The core of FastAvatar is a Large Gaussian Reconstruction Transformer (LGRT) featuring three key designs:
+            First, a 3DGS transformer aggregating multi-frame cues while injecting initial 3D prompt to predict the corresponding registered canonical 3DGS representations;
+            Second, multi-granular guidance encoding (camera pose, expression coefficient, head pose) mitigating animation-induced misalignment for variable-length inputs;
             Third, incremental Gaussian aggregation via landmark tracking and sliced fusion losses.
-            Integrating these features, FastAvatar enables incremental reconstruction, i.e., improving quality with more observations, unlike prior work wasting input data. 
+            Integrating these features, FastAvatar enables incremental reconstruction, i.e., improving quality with more observations without wasting input data as in previous works.
             This yields a quality-speed-tunable paradigm for highly usable avatar modeling.
-            Extensive experiments show that FastAvatar has higher quality and highly competitive speed compared to existing methods.
+            Extensive experiments show that FastAvatar has a higher quality and highly competitive speed compared to existing methods.
+            Code and models are available at the project repository.
           </p>
         </div>
       </div>
@@ -198,26 +252,26 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p>
-            FastAvatar is a feed-forward framework designed for high-quality, animatable <strong>3D Gaussian Splatting (3DGS) avatars</strong> reconstruction from <strong>variable-length input observations</strong> such as single images or multi-view video sequences. Unlike optimization-based methods, FastAvatar leverages a <strong>Large Gaussian Reconstruction Transformer (LGRT)</strong> architecture to efficiently achieve robust reconstruction fidelity while supporting dynamic facial expressions and poses.
+            FastAvatar is a feedforward framework designed to reconstruct a high-quality, animatable <strong>3D Gaussian Splatting (3DGS) avatar</strong> from an unordered, variable-length set of observations such as a single selfie, monocular video frames, or multi-view captures. The model consumes RGB observations together with camera parameters, expression coefficients, and head pose, then outputs a canonical 3DGS avatar that can be animated from arbitrary viewpoints.
           </p>
           <p>
-            The pipeline can be summarized as follows:
+            The pipeline is centered on the <strong>Large Gaussian Reconstruction Transformer (LGRT)</strong>:
           </p>
           <ul>
             <li>
-              <strong>Facial Tokenization:</strong> Each input frame is processed into latent tokens via <strong>DINOv2</strong> for feature extraction. Tokens are encoded with expression coefficients, pose, and camera information to distinguish facial features across frames. Patchified tokens ensure compatibility with subsequent transformer-based processing.
+              <strong>Face Encoding:</strong> Each input frame is encoded into facial tokens with <strong>DINOv2</strong>, then augmented with camera pose, expression coefficient, and head-pose encodings so the model can distinguish appearance changes across frames.
             </li>
             <li>
-              <strong>Attention-Based Aggregation:</strong> Tokens are fused using both <strong>frame attention</strong> (intra-frame processing via positional prompts) and <strong>global attention</strong> (cross-frame alignment). This enables accurate 3D spatial registration and consistency across variable-length inputs.
+              <strong>3DGS Transformer Aggregation:</strong> Frame attention injects coarse 3D positional prompts and aggregates intra-frame features, while global attention registers and fuses information across variable-length observations.
             </li>
             <li>
-              <strong>Gaussian Splatting Prediction:</strong> Aggregated tokens are processed through an MLP-based <strong>GS Head</strong> to predict Gaussian splatting attributes such as scale, position, rotation, color, and opacity. These attributes are rasterized into a high-quality 3D Gaussian point cloud representation for animatable avatars.
+              <strong>3DGS Attribute Generation:</strong> A shared MLP-based <strong>GS Head</strong> predicts Gaussian attributes including color, opacity, scale, rotation, importance score, and point offset for each registered frame representation.
             </li>
             <li>
-              <strong>Canonical Fusion:</strong> Multi-view Gaussian splatting representations are fused into a canonical 3DGS model, guided by loss functions like <strong>Landmark Tracking Loss</strong> and <strong>Sliced Fusion Loss</strong> to ensure proper alignment and eliminate artifacts.
+              <strong>Canonical 3DGS Fusion:</strong> Frame-wise Gaussian representations are fused into a canonical avatar model, combining complementary details from different views, expressions, and poses.
             </li>
             <li>
-              <strong>Efficient Rendering:</strong> The reconstructed 3DGS avatar is driven by expression codes (e.g., derived from FLAME) for animatable facial movement control, achieving real-time rendering speeds of ~55 FPS with 16 input frames on an RTX 4090 GPU.
+              <strong>Incremental Reconstruction:</strong> Landmark tracking loss and sliced fusion loss supervise accurate registration and fusion, enabling reconstruction quality to improve as more observations become available.
             </li>
           </ul>
         </div>
@@ -350,15 +404,13 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{wu2025fastavatarunifiedfasthighfidelity,
-        title={FastAvatar: Towards Unified Fast High-Fidelity 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers}, 
-        author={Yue Wu and Yufan Wu and Wen Li and Yuxi Lu and Kairui Feng and Xuanhong Chen},
-        year={2025},
-        eprint={2508.19754},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2508.19754}, 
-  }</code></pre>
+      <pre><code>@inproceedings{wu2026fastavatar,
+    title={FastAvatar: Towards Unified and Fast 3D Avatar Reconstruction with Large Gaussian Reconstruction Transformers},
+    author={Yue Wu and Xuanhong Chen and Yufan Wu and Wen Li and Yuxi Lu and Kairui Feng},
+    booktitle={The Fourteenth International Conference on Learning Representations},
+    year={2026},
+    url={https://openreview.net/forum?id=P7zBSCs4Xt}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
